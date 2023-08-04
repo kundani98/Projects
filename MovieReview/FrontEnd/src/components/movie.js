@@ -22,7 +22,7 @@ function Movie(props) {
     })
 
     const getMovie = id => {
-        MovieDataService.get("573a1390f29313caabcd4135")
+        MovieDataService.get(id)
             .then(response => {
                 setMovie(response.data)
                  console.log(response.data)

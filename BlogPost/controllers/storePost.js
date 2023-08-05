@@ -7,8 +7,8 @@ module.exports = async (req, res) => {
 
     try {
         let image = req.files.image;
-        imgResult = await image.mv(path.resolve(__dirname, '..', 'public/img', image.name));
-        imgPath = '/img/' + image.name;
+        imgResult = await image.mv(path.resolve(__dirname, '..', 'public/assets/img', image.name));
+        imgPath = '/assets/img/' + image.name;
     } catch (error) {
         imgPath = null;
         

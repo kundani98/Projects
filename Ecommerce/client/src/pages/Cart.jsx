@@ -176,7 +176,7 @@ const Cart = () => {
                 <div>
                   <Product>
                     <ProductDetail>
-                      <Image src={product.image} />
+                      <Image src={product.img} />
                       <Details>
                         <ProductName>
                           <b>Product:</b> {product.title}

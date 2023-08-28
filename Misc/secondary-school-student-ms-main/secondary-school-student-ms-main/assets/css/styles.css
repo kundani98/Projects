@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  width: 420px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 18px;
+}
+
+.input-container label {
+  margin-left: 5px;
+  width: 30px;
+  font-size: 18px;
+}
+
+.input-container input {
+  border: none;
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.school-box {
+  background-color: #090e53;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.school-info {
+  text-align: center;
+}
+
+.school-info img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.school-info h2 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.school-info p {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.fa-sign-in-alt{
+  position: relative;
+  right: 15px;
+}
+
+#password-toggle {
+  position: relative;
+  top: 8px;
+  left: 5px;
+  width: 30px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+button {
+  padding: 15px;
+  background-color: #090e53;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 18px;
+}
+
+.login-btn{
+  background-color: #090e53;
+  position: relative;
+  top: 10px;
+  width: 150px;
+}
+
+.login-btn:hoverr{
+  background-color: #0e1581;
+}
+
+.forgot-password {
+  position: relative;
+  bottom: 34px;
+  left: 95px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.forgot-password a {
+  color: #090e53;
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
+}
+
+/* ... mobile responsiveness ... */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .login-container {
+    position: relative;
+    bottom: 90px;
+    right: 12px;
+    width: 85%;
+    margin-right: 0;
+  }
+
+  .school-box {
+   display: none;
+  }
+
+  .login-btn, .forgot-password{
+    width: 50%;
+    margin-bottom: -20px;
+  }
+
+  .forgot-password {
+    bottom: 21px;
+    left: 120px;
+  }
+}
